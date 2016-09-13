@@ -149,10 +149,13 @@
 
 #paragraph p{
 
-	 padding-right: 20px;
-	 padding-left: 20px;
-   font-family: 'Titillium Web', sans-serif;
-   font-size: 15px;
+
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+  padding: 40px 0;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
 
 }
 
@@ -268,7 +271,7 @@
 .image figcaption{
   
   position: absolute;
-  left: -100px;
+  left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0.7;
@@ -300,19 +303,22 @@
   
 }
 
-/* Landing figcaption parallax */  
+/* Landing images parallax */  
 
-.image figcaption{
+ .image{
 
-  left: -1000px;
-  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.3s ease-in-out;
 
-}
-.image:hover figcaption{
+ }
 
-  left: 0;
+ .landing{
+  
+  opacity: 1;
+  transform: translateX(0);
 
-}
+ }
 
 
 
@@ -461,7 +467,7 @@ hr{
   float:right;
   position: absolute;
   right:0;
-  top: 1987px;
+  top: 2075px;
   width: 38%;
   height: 50px;
   line-height: 13px;
@@ -477,7 +483,7 @@ hr{
   position: absolute;
   float:right;
   right: 0;
-  top: 2037px;
+  top: 2125px;
 
 
 }
